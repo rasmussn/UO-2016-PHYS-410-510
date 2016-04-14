@@ -1,0 +1,9 @@
+- documentation for anaconda packages
+
+http://docs.continuum.io/anaconda/pkg-docs.html
+
+- documentation for ipython notebook
+
+http://www.randalolson.com/2012/05/12/a-short-demo-on-how-to-use-ipython-notebook-as-a-research-notebook/
+http://ipython.org/ipython-doc/3/notebook/index.html
+
