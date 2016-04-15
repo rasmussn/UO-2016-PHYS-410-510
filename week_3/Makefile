@@ -28,5 +28,5 @@ check: hello
 	@hello
 
 clean:
-	rm -f hello.o hello io-example
+	rm -f hello.o hello io-example fort.20
 
