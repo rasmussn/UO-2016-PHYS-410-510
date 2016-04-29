@@ -1,0 +1,31 @@
+    dimension xlat(20),xlon(20),id(20),ip(5)
+               r = 6378
+               do i  = 1,5
+               read(1,*)ix,x1,x2
+               id(i) = ix
+               xlat(i) = x1/57.1
+               xlon(i) = x2/57.1
+               end do
+               do j = 1,12
+               read(22,*)i1,i2,i3,i4,i5
+               ip(1) =i1
+               ip(2) =i2
+               ip(3) =i3
+               ip(4) =i4
+               ip(5) =i5
+               do i = 1,4
+           dlat = xlat(ip(i)) - xlat(ip(i+1))
+           dlon = xlon(ip(i)) - xlon(ip(I+1))
+        a=(sin(dlat/2))**2+cos(xlat(ip(i)))*cos(xlat(ip(i+1)))*(sin(dlon/2))**2 
+           b = sqrt(a)
+           c = 2 * asin(b)
+           d= r*c
+           d0 = d+d0
+            end do
+              write(*,101)j, ip,d0
+              d0=0
+              end do
+ 101            format(6(i2,1x),f7.1)
+                stop
+                 end
+                  
