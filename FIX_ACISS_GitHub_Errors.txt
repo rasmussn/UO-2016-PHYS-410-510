@@ -1,0 +1,35 @@
+Problem with using github.com on ACISS
+--------------------------------------
+
+If you clone a repository on ACISS and try to later push changes
+to the repository you will encounter two problems:
+
+1. The error message:
+-----------------
+error: The requested URL returned error: 403 Forbidden while accessing https://github.com/rasmussn/UO-2016-PHYS-410-510.git/info/refs
+
+fatal: HTTP request failed
+-----------------
+
+Google will give you a hint as to the problem.  Essentially you need to add your
+username to be able to authenticate.  You can find out about the remote location
+with the command:
+
+git remote -v
+
+Fix it with the command:
+
+git remote set-url origin https://user_name@github.com/rasmussn/UO-2016-PHYS-410-510.git
+
+
+2. But then if you try to push you will get the annoying error message:
+
+------------------
+(gnome-ssh-askpass:17231): Gtk-WARNING **: cannot open display: 
+------------------
+
+Fix this by unsetting (removing) the environment variable SSH_ASKPASS:
+
+unset SSH_ASKPASS
+
+
