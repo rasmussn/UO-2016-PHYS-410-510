@@ -1,0 +1,5 @@
+Idaho                   Boise           43.613739       -116.237651
+California              Sacramento      38.555605       -121.468926
+Montana                 Helana          46.595805       -112.027031
+Oregon                  Salem           44.931109       -123.029159
+Washington              Olympia         47.042418       -122.893077
