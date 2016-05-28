@@ -1,5 +1,8 @@
 #
-# on AICSS: module load python/2.7.9
+# on AICSS:
+#
+#     qsub -I
+#     module load python/2.7.9
 #
 
 from netCDF4 import Dataset
